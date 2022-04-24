@@ -5,11 +5,12 @@ import { logo_blue } from "../utils/svg";
 import photo from "./About-images/photo.png";
 import photo2 from "./About-images/photo2.png";
 import Footer from "../Home/Footer";
+import vector from "./About-images/Vector.png"
 
-const AboutUs = () => {
+const AboutUs = ({active, setActive}) => {
   return (
     <>
-      <Navbar styles={styles} logo={logo_blue} />
+      <Navbar styles={styles} logo={logo_blue} vector={vector} active={active} setActive={setActive}/>
       <main className={styles.aboutus_block}>
         <h1 className={styles.about_title}>ЩО ТАКЕ MOXXXY</h1>
         <p className={styles.text}>

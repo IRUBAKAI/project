@@ -99,6 +99,11 @@
 .arrow_links span {
   margin-right: 5px;
 }
+.bold_link {
+  font-weight: bold !important;
+  font-style: normal;
+  color: #292eae;
+}
 .single_artcl h1 {
   font-family: "Raleway";
   font-weight: 900;

@@ -9,14 +9,21 @@ import rectangle6 from "./home-images/Rectangle 6.png";
 import Partners from "./Partners";
 import Footer from "./Footer";
 import Service from "./Service";
-import {logo} from "../utils/svg"
+import { logo } from "../utils/svg";
+import vector from "../Home/home-images/Vector.png";
 
-const Home = () => {
+const Home = ({ active, setActive }) => {
   return (
     <>
       <header>
         <div className={styles.background_image}>
-          <Navbar styles={styles} logo={logo}/>
+          <Navbar
+            styles={styles}
+            logo={logo}
+            active={active}
+            setActive={setActive}
+            vector={vector}
+          />
           <div className={styles.header_title}>
             <h1>MOXXXY</h1>
           </div>
@@ -30,7 +37,7 @@ const Home = () => {
           </div>
         </div>
       </header>
-      <Service styles={styles}/>
+      <Service styles={styles} />
       <section className={styles.phone_sec}>
         <p className={styles.sec_phone_number}>+38 (044) 232 02 04</p>
         <p className={styles.phone_sec_title}>
@@ -122,8 +129,8 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <Partners/>
-      <Footer/>
+      <Partners />
+      <Footer />
     </>
   );
 };

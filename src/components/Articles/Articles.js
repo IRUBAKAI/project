@@ -12,10 +12,11 @@ import photo6 from "./Articles-images/photo6.png";
 import Footer from "../Home/Footer";
 import { Link } from "react-router-dom";
 
-const Articles = () => {
+
+const Articles = ({active, setActive, vector}) => {
   return (
     <>
-      <Navbar styles={navStyles} logo={logo_blue} />
+      <Navbar styles={navStyles} logo={logo_blue} active={active} setActive={setActive} vector={vector}/>
       <main className={styles.articles_sec}>
         <h1>ЦІКАВІ ПУБЛІКАЦІЇ ВІД АВТОРІВ MOXXXY</h1>
         <div className={styles.articles_blocks}>

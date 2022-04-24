@@ -76,3 +76,43 @@
 .about_img  {
     margin: 0 60px 0 70px;
 }
+#active {
+  display: block;
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 1050px) {
+  .navbar span {
+    margin: auto;
+  }
+  .languages {
+    display: none;
+  }
+  .links {
+    display: none;
+  }
+  .vector {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+  }
+  #active {
+    position: absolute;
+    top: 45px;
+    left: 20px;
+    background-color: rgba(128, 128, 128, 0.527);
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 1;
+    color: #000;
+  }
+}
+
+@media (max-width: 950px) {
+}

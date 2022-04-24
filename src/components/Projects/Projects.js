@@ -17,11 +17,18 @@ import photo11 from "./Projects-images/Frame 11.png";
 import photo12 from "./Projects-images/Frame 12.png";
 import Footer from "../Home/Footer";
 import { Link } from "react-router-dom";
+import vector from "../About/About-images/Vector.png"
 
-const Projects = () => {
+const Projects = ({ active, setActive }) => {
   return (
     <>
-      <Navbar styles={navStyles} logo={logo_blue} />
+      <Navbar
+        styles={navStyles}
+        logo={logo_blue}
+        active={active}
+        setActive={setActive}
+        vector={vector}
+      />
       <main className={styles.projects_section}>
         <h1>УСІ ДОСТУПНІ ПРОЕКТИ MOXXXY</h1>
         <div className={styles.btns_block}>
@@ -30,10 +37,11 @@ const Projects = () => {
           <button>РЕМОНТ ТА СЕРВІС</button>
         </div>
         <div className={styles.projects_blocks}>
-          <Link to='/singleproject'><div className={styles.project_block}>
-            <img src={photo1} alt="" />
-            <p>Віта Поштова: Візуалізація будівель на території</p>
-          </div>
+          <Link to="/singleproject">
+            <div className={styles.project_block}>
+              <img src={photo1} alt="" />
+              <p>Віта Поштова: Візуалізація будівель на території</p>
+            </div>
           </Link>
           <div className={styles.project_block}>
             <img src={photo2} alt="" />
@@ -81,7 +89,7 @@ const Projects = () => {
           </div>
         </div>
       </main>
-      <Footer/>
+      <Footer />
     </>
   );
 };
