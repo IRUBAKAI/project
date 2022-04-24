@@ -425,10 +425,9 @@ footer {
   display: block;
 }
 
-
 @media (max-width: 1200px) {
   .background_image {
-    min-width: 100%;
+    width: 100%;
     left: 0;
   }
   .service_blocks ul {
@@ -492,11 +491,6 @@ footer {
     padding: 10px;
     border-radius: 10px;
     z-index: 1;
-  }
-}
-@media (max-width: 1000px) {
-  .background_image {
-    max-width: 600px;
   }
 }
 @media (max-width: 870px) {

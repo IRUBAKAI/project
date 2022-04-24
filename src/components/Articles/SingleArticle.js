@@ -6,11 +6,12 @@ import styles from "./Articles.module.css";
 import photo1 from "./Articles-images/photo7.png"
 import photo2 from "./Articles-images/photo8.png"
 import Footer from "../Home/Footer";
+import vector from "../About/About-images/Vector.png"
 
-const SingleArticle = () => {
+const SingleArticle = ({active, setActive}) => {
   return (
     <>
-      <Navbar styles={navStyles} logo={logo_blue} />
+      <Navbar styles={navStyles} logo={logo_blue} active={active} setActive={setActive} vector={vector}/>
       <main className={styles.single_artcl}>
         <div className={styles.arrow_links}>
           <span>MOXXXY {">"} </span>

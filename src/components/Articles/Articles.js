@@ -11,9 +11,10 @@ import photo5 from "./Articles-images/photo5.png";
 import photo6 from "./Articles-images/photo6.png";
 import Footer from "../Home/Footer";
 import { Link } from "react-router-dom";
+import vector from "../About/About-images/Vector.png"
 
 
-const Articles = ({active, setActive, vector}) => {
+const Articles = ({active, setActive}) => {
   return (
     <>
       <Navbar styles={navStyles} logo={logo_blue} active={active} setActive={setActive} vector={vector}/>

@@ -64,7 +64,6 @@ main {
   justify-content: center;
   display: flex;
   flex-direction: column;
-  margin: 0 80px;
 }
 .main_title {
   text-align: center;
@@ -133,12 +132,12 @@ main {
   font-size: 25px;
   line-height: 28px;
   color: #000;
-  width: 950px;
+  max-width: 950px;
   position: relative;
 }
 .characteristics p {
-    width: 400px;
-    margin-right: 55px;
+  width: 400px;
+  margin-right: 55px;
 }
 .blue_text {
   color: #292eae;
@@ -148,24 +147,90 @@ main {
   color: gray;
 }
 sup {
-    font-size: 15px;
+  font-size: 15px;
 }
 .bold_currency {
-    font-weight: bold;
+  font-weight: bold;
 }
 .line_beetween_characteristics {
-    position: absolute;
-    height: 210px;
-    width: 2px;
-    background-color: #292eae;
-    right: 57%;
-    top: 30px;
+  position: absolute;
+  height: 210px;
+  min-width: 2px;
+  background-color: #292eae;
+  right: 54%;
+  top: 30px;
 }
 .img_blocks {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .img_blocks img {
-    margin: 33px 20px 32px 0;
+  margin: 33px 20px 32px 0;
+  max-width: 100%;
+}
+#active {
+  display: block;
+}
+.vector {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .characteristics {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .line_beetween_characteristics {
+    display: none;
+  }
+  .title_block {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+  }
+  .line {
+    width: 0;
+  }
+}
+@media (max-width: 1050px) {
+  .navbar span {
+    margin: auto;
+  }
+  .languages {
+    display: none;
+  }
+  .links {
+    display: none;
+  }
+  .vector {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+  }
+  #active {
+    position: absolute;
+    top: 45px;
+    left: 20px;
+    background-color: rgba(128, 128, 128, 0.527);
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 1;
+    color: #000;
+  }
+}
+
+@media (max-width: 550px) {
+  .projects_section {
+    margin: 0;
+  }
+  .img_blocks img {
+    margin: 20px auto;
+  }
 }

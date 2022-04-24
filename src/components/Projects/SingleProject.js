@@ -10,11 +10,12 @@ import photo4 from "./Projects-images/photo4.png";
 import photo5 from "./Projects-images/photo5.png";
 import photo6 from "./Projects-images/photo6.png";
 import Footer from "../Home/Footer";
+import vector from "../About/About-images/Vector.png"
 
-const SingleProject = () => {
+const SingleProject = ({active, setActive}) => {
   return (
     <>
-      <Navbar styles={navStyles} logo={logo_blue} />
+      <Navbar styles={navStyles} logo={logo_blue} vector={vector} active={active} setActive={setActive}/>
       <main>
         <div className={styles.arrow_links}>
           <span>MOXXXY {">"} </span>

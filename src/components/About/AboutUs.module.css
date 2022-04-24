@@ -80,9 +80,6 @@
   display: block;
 }
 
-@media (max-width: 1200px) {
-
-}
 
 @media (max-width: 1050px) {
   .navbar span {
@@ -105,7 +102,7 @@
     position: absolute;
     top: 45px;
     left: 20px;
-    background-color: rgba(128, 128, 128, 0.527);
+    background-color: rgb(161, 161, 161);
     width: 150px;
     padding: 10px;
     border-radius: 10px;

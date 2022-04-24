@@ -18,10 +18,10 @@ main h1 {
 form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  max-width: 463px;
 }
 form input {
-  width: 463px;
+  width: 100%;
   height: 65px;
   border: 1px solid #292eae;
   color: #292eae;
@@ -41,15 +41,15 @@ form input::placeholder {
 }
 form textarea {
   resize: none;
-  width: 463px;
+  width: 100%;
   height: 205px;
   font-size: 23px;
   text-align: center;
   color: #292eae;
 }
 form textarea::placeholder {
-    text-align: center;
-    color: #292eae;
+  text-align: center;
+  color: #292eae;
 }
 .btn_contact {
   width: 228px;
@@ -57,6 +57,7 @@ form textarea::placeholder {
   border-radius: 10px;
   background-color: #292eae;
   color: #fff;
+  margin: auto;
 }
 .contact_blocks {
   display: flex;
@@ -71,22 +72,30 @@ form textarea::placeholder {
   font-weight: 700;
   font-size: 30px;
   line-height: 43px;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
 }
 .right_block ul li img {
-    margin-right: 21px;
+  margin-right: 21px;
 }
 .blue_text {
-    color: #292eae;
+  color: #292eae;
 }
 .contact_li {
-    color: #292eae;
-    margin: auto;
+  color: #292eae;
+  margin: auto;
 }
 
 iframe {
-    height: 650px;
-    margin: 50px 0 20px;
+  height: 650px;
+  margin: 50px 0 20px;
+}
+
+@media (max-width: 1200px) {
+  .contact_blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

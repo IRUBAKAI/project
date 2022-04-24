@@ -29,7 +29,6 @@ const Projects = ({ active, setActive }) => {
         setActive={setActive}
         vector={vector}
       />
-      <p>sadasd</p>
       <main className={styles.projects_section}>
         <h1>УСІ ДОСТУПНІ ПРОЕКТИ MOXXXY</h1>
         <div className={styles.btns_block}>

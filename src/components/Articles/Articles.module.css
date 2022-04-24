@@ -38,11 +38,12 @@
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  width: 570px;
+  max-width: 570px;
   color: #000;
 }
 .artcl_block img {
   margin-right: 15px;
+  max-width: 100%;
 }
 #last_artcl_block {
   border-bottom: none;
@@ -114,7 +115,7 @@
   margin-bottom: 15px;
 }
 .single_artcl img {
-  width: 847px;
+  max-width: 100%;
   height: 550px;
   margin: auto;
 }
@@ -133,4 +134,21 @@
   color: #292eae;
   font-size: 30px;
   font-weight: 500;
+}
+
+@media (max-width: 1070px) {
+    .artcl_block {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      margin: auto;
+      justify-content: center;
+    }
+    .artcl_block p{
+      margin: auto;
+    }
+    .articles_blocks {
+      margin: auto;
+      justify-content: center;
+    }
 }
