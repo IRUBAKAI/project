@@ -12,6 +12,7 @@
   display: flex;
   border-bottom: 2px solid #292eae;
   padding: 38px 0;
+  margin: 0 50px;
 }
 .articles_blocks a {
   text-decoration: none;
